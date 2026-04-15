@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    box-sizing: border-box;
+}
+main{
+    background-color: hsl(148, 38%, 91%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 30px;
+    color: hsl(187, 24%, 22%);
+    padding: 20px;
+}
+h1{
+    padding: 15px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.error{
+    display: none;
+    color: hsl(0, 66%, 54%);
+}
+.query{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label{
+    padding-top: 10px;
+}
+input{
+    border-radius: 7px;
+    height: 2.5rem;
+    border-color: hsl(169, 82%, 27%);
+    padding: 10px 12px;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+input:hover{
+    border: 3px solid hsl(169, 82%, 27%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+input[type="radio"]{
+    width: auto;
+    height: auto;
+    border: none;
+    accent-color: hsl(169, 82%, 27%);
+    transition: 1s ease-in-out;
+}
+input[type="radio"]:hover{
+    border: 3px solid hsl(169, 82%, 27%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#query-1{
+    border: 1px solid;
+    border-radius: 7px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
+    transition: 1s ease-in-out;
+
+}
+#query-1:hover{
+    border: 3px solid hsl(169, 82%, 27%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#query-2{
+    border: 1px solid;
+    border-radius: 7px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    transition: 1s ease-in-out;
+
+}
+#query-2:hover{
+    border: 3px solid hsl(169, 82%, 27%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#message{
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+}
+#message:hover{
+    border: 3px solid hsl(169, 82%, 27%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+label[for="consent"]{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+}
+input[type="checkbox"]{
+    accent-color: hsl(169, 82%, 27%);
+    width: 30px;
+}
+button{
+    border-radius: 7px;
+    height: 3rem;
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    color: hsl(148, 38%, 91%);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    background-color: hsl(187, 24%, 22%);
+}
+.success{
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 14px;
+}
+@media(min-width:1024px) {
+    #container{
+        width: 100%;
+        min-width: 600px;
+        
+    }
+    .name{
+        flex-direction: row;
+        gap: 16px;
+        flex:1;
+    }
+   #last-name{
+    width: 100%;
+    margin-top: 10px;
+   }
+   #first-name{
+    width: 100%;
+    margin-top: 10px;
+   }
+    .query-options{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex:1;
+        align-items: center;
+    }
+   #query-1{
+    width: 100%;
+    margin-top: 10px;
+   }
+   #query-2{
+    width: 100%;
+    margin-top: 10px;
+   }
+
+}
