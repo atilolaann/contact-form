@@ -56,6 +56,7 @@ input{
     width: 100%;
     margin-top: 10px;
     transition: 0.3s ease-in-out;
+    display: inline-block;
 }
 input:hover{
     border: 3px solid hsl(169, 82%, 27%);
@@ -80,7 +81,6 @@ input[type="radio"]:hover{
     align-items: center;
     gap: 5px;
     transition: 1s ease-in-out;
-
 }
 #query-1:hover{
     border: 3px solid hsl(169, 82%, 27%);
@@ -120,6 +120,7 @@ label[for="consent"]{
 input[type="checkbox"]{
     accent-color: hsl(169, 82%, 27%);
     width: 30px;
+    display: inline-block;
 }
 button{
     border-radius: 7px;
